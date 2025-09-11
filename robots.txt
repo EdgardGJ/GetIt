@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /productos/
+Disallow: /blog/
+Allow: /
+
+Sitemap: https://getitofficial.netlify.app//sitemap.xml
