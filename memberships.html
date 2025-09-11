@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <link rel="shortcut icon" href="multimedia/img/favIcon.png" type="image/x-icon">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!--Controllers-->
+    <script src="js/navMenu.js"></script>
+
+    <title>GetIt - Memberships</title>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <ul class="navlist">
+                <li class="nav-item">
+                    <a class="nav-link" data-translate="home" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a class="nav-link submenuContainer" data-translate="services" id="servicesItem" href="#">SERVICIOS<i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="submenu" id="submenu">
+                        <li><a href="services.html" data-translate="subTittle1">
+                            Página de Servicios
+                        </a></li>
+                        <li><a href="services.html#hardWareImple" data-translate="subTittle2">
+                            Desarrollo de Software
+                        </a></li>
+                        <li><a href="services.html#softwareDevelopment" data-translate="subTittle3">
+                            Estrategias de Marketing
+                        </a></li>
+                        <li><a href="services.html#marketingStrateg" data-translate="subTittle4">
+                            Diseño y Marca
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a class="nav-link submenuContainer active" data-translate="services" id="servicesItem" href="#">RECURSOS<i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="submenu submenu2" id="submenu">
+                        <li><a href="services.html" data-translate="subTittle1">
+                            Paquetes
+                        </a></li>
+                        <li><a href="memberships.html" data-translate="subTittle2">
+                            Membresías
+                        </a></li>
+                        <li><a href="soon.html" data-translate="subTittle3">
+                            Productos
+                        </a></li>
+                        <li><a href="soon.html" data-translate="subTittle4">
+                            Blog
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-translate="contact" href="contact.html">CONTACTO</a>
+                </li>        
+            </ul>
+        </div>
+            
+        <div class="logo-container">
+            <figure>
+                <a class="logo" href="index.html">
+                    <img src="multimedia/img/logo.png" 
+                        alt="GetIt Logo" class="logo">
+                </a>
+            </figure>
+        </div>
+
+        <div class="language-selector">
+            <a id="en" href="#" class="language-link en" data-lang="en">
+                <span class="language-text">EN</span>
+            </a>
+            <span class="separator">|</span>
+            <a id="es" href="#" class="language-link es active" data-lang="es">
+                <span class="language-text">ES</span>
+            </a>
+        </div>
+
+        <div class="nav-icons">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <!-- MEMBERSHIPS LANDING -->
+    <main class="memberships-landing">
+        <!-- HERO -->
+        <section class="mships-hero" aria-labelledby="mships-hero-title">
+            <div class="mships-hero__bg" aria-hidden="true"></div>
+
+            <div class="mships-hero__content">
+                <h1 id="mships-hero-title">
+                    Membresías <span>GetIt</span> para crecer sin fricción
+                </h1>
+                <p class="lead">
+                    Paquetes mensuales (contrato ≥ 3 meses) con foco en resultados: soporte continuo,
+                    optimización y entregables claros. Elige la que empuje tu negocio hoy.
+                </p>
+
+                <div class="mships-hero__actions">
+                    <a href="#que-son" class="btn-cta">¿Cómo funcionan?</a>
+                    <a href="#catalogo" class="btn-ghost" aria-label="Ver catálogo de membresías">Ver catálogo</a>
+                </div>
+
+                <ul class="mships-hero__chips" aria-label="Acceso rápido a páginas de membresías">
+                    <li><a class="chip" href="softwareMem.html"><i class="fa-solid fa-shield"></i> Software</a></li>
+                    <li><a class="chip" href="marketingMem.html"><i class="fa-solid fa-bullhorn"></i> Marketing</a></li>
+                    <li><a class="chip" href="designMem.html"><i class="fa-solid fa-palette"></i> Diseño</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ¿QUÉ SON? -->
+        <section id="que-son" class="mships-what">
+            <div class="mships-what__content">
+                <div>
+                    <h2>¿Qué son las <span>membresías</span>?</h2>
+                    <p>
+                        Son paquetes de servicios recurrentes con objetivos y entregables definidos.
+                        Te permiten planificar, optimizar costos y mantener tu operación siempre al día
+                        con un equipo experto acompañándote.
+                    </p>
+                </div>
+
+                <ul class="pills">
+                    <li class="pill"><i class="fa-solid fa-calendar-check"></i> Contrato mínimo de 3 meses</li>
+                    <li class="pill"><i class="fa-solid fa-chart-line"></i> Entregables y métricas claras</li>
+                    <li class="pill"><i class="fa-solid fa-headset"></i> Soporte especializado continuo</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ¿POR QUÉ ADQUIRIRLAS? -->
+        <section class="mships-why" aria-labelledby="mships-why-title">
+            <div class="section-head">
+                <h2 id="mships-why-title">¿Por qué adquirir una <span>membresía</span>?</h2>
+                <p>Beneficios diseñados para mantenerte en movimiento y con foco en el crecimiento.</p>
+            </div>
+
+            <div class="why-grid">
+                <article class="why-card">
+                    <i class="fa-solid fa-rocket"></i>
+                    <h3>Velocidad y constancia</h3>
+                    <p>Cadenas mensuales que aseguran avance continuo sin cuellos de botella.</p>
+                </article>
+                <article class="why-card">
+                    <i class="fa-solid fa-piggy-bank"></i>
+                    <h3>Costos predecibles</h3>
+                    <p>Inversión mensual clara; sin sorpresas ni costos ocultos.</p>
+                </article>
+                <article class="why-card">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h3>Escalable</h3>
+                    <p>Sube o baja de plan según tu prioridad: marketing, software o diseño.</p>
+                </article>
+                <article class="why-card">
+                    <i class="fa-solid fa-handshake"></i>
+                    <h3>Soporte experto</h3>
+                    <p>Equipo a tu lado para iterar, optimizar y resolver rápido.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CATÁLOGO (ENLACES A CADA MEMBRESÍA) -->
+        <section id="catalogo" class="mships-catalog" aria-labelledby="mships-catalog-title">
+            <div class="section-head">
+                <h2 id="mships-catalog-title">Explora nuestras <span>membresías</span></h2>
+                <p>Elige el área que necesitas impulsar ahora mismo.</p>
+            </div>
+
+            <div class="catalog-grid">
+                <!-- Software -->
+                <article class="catalog-card">
+                    <figure class="card-media">
+                        <img src="multimedia/img/experto-en-ti-optimista-satisfecho-despues-de-aumentar-la-seguridad-de-los-datos-utilizando-portatiles-miniatura.jpg" alt="Membresía de Software" loading="lazy">
+                        <span class="media-overlay"></span>
+                    </figure>
+                    <div class="card-body">
+                        <h3>Software</h3>
+                        <p class="card-desc">Hosting + SSL, backups y soporte técnico para operar sin fricción.</p>
+                        <ul class="card-points">
+                            <li><i class="fa-solid fa-server"></i> Hosting y SSL</li>
+                            <li><i class="fa-solid fa-cloud-arrow-up"></i> Backups automatizados</li>
+                            <li><i class="fa-solid fa-headset"></i> Soporte dedicado</li>
+                        </ul>
+                        <a href="softwareMem.html" class="MemBtn">Ver membresía</a>
+                    </div>
+                </article>
+
+                <!-- Marketing -->
+                <article class="catalog-card">
+                    <figure class="card-media">
+                        <img src="multimedia/img/vision-frontal-mujer-posando-con-traje-verde.jpg" alt="Membresía de Marketing" loading="lazy">
+                        <span class="media-overlay"></span>
+                    </figure>
+                    <div class="card-body">
+                        <h3>Marketing</h3>
+                        <p class="card-desc">Crecimiento medible con contenido, analítica y optimización.</p>
+                        <ul class="card-points">
+                            <li><i class="fa-solid fa-bullhorn"></i> Campañas efectivas</li>
+                            <li><i class="fa-solid fa-chart-line"></i> Analítica y reportes</li>
+                            <li><i class="fa-solid fa-users-gear"></i> Segmentación</li>
+                        </ul>
+                        <a href="marketingMem.html" class="MemBtn">Ver membresía</a>
+                    </div>
+                </article>
+
+                <!-- Diseño -->
+                <article class="catalog-card">
+                    <figure class="card-media">
+                        <img src="multimedia/img/colegas-sonrientes-de-tiro-medio-que-trabajan-en-la-oficina-miniatura.jpg" alt="Membresía de Diseño" loading="lazy">
+                        <span class="media-overlay"></span>
+                    </figure>
+                    <div class="card-body">
+                        <h3>Diseño</h3>
+                        <p class="card-desc">Identidad, piezas gráficas y soporte creativo a tu medida.</p>
+                        <ul class="card-points">
+                            <li><i class="fa-solid fa-palette"></i> Identidad visual</li>
+                            <li><i class="fa-solid fa-brush"></i> Piezas para campañas</li>
+                            <li><i class="fa-solid fa-image"></i> Contenido digital</li>
+                        </ul>
+                        <a href="designMem.html" class="MemBtn">Ver membresía</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo-container">
+                <img src="multimedia/img/footerLogo.png" alt="NextAI Logo">
+                <div class="socialIcon">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-links footer-container">
+                <h3 class="footer-tittles">Enlaces</h3>
+                <menu>
+                    <li><a href="index.html" data-translate="frHome">Inicio</a></li>
+                    <li><a href="services.html" data-translate="frServices">Servicios</a></li>
+                    <li><a href="gallery.html" data-translate="frPortfolio">Contacto</a></li>
+                </menu>
+            </div>
+            <div class="footer-services footer-container">
+                <h3 class="footer-tittles" data-translate="frServices">Servicios</h3>
+                <menu>
+                    <li><a href="services.html#softwareDevelopment" data-translate="serviceTittle2">Desarrollo de Software</a></li>
+                    <li><a href="services.html#marketingStrateg" data-translate="serviceTittle3">Estrategias de Marketing</a></li>
+                    <li><a href="services.html#designBrand" data-translate="serviceTittle4">Diseño y Marca</a></li>
+                </menu>
+            </div>
+            <div class="footer-company footer-container">
+                <h3 class="footer-tittles">Compañia</h3>
+                <menu>    
+                    <li><a href="about.html" data-translate="frAbout">Acerca</a></li>
+                    <li><a href="#">Afiliados</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Membresías</a></li>
+                </menu>
+            </div>
+            <div class="footer-socials footer-container">
+                <h3 class="footer-tittles" data-translate="contactUs">Contáctanos</h3>
+                <menu>
+                    <li><a href="contact.html" data-translate="frSupport">Soporte</a></li>
+                    <li><a href="#" data-translate="frSocial">Redes Sociales</a></li>
+                    <li><a href="#" data-translate="frPricing">Presupuestos</a></li>
+                </menu>
+            </div>
+        </div>
+            
+        <hr class="footer-divider">
+        <div class="copy">
+            <p>&copy; 2025 GetIt. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

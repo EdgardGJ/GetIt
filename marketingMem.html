@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <link rel="shortcut icon" href="multimedia/img/favIcon.png" type="image/x-icon">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!--Controllers-->
+    <script src="js/navMenu.js"></script>
+
+    <title>GetIt - Marketing Membership</title>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <ul class="navlist">
+                <li class="nav-item">
+                    <a class="nav-link" data-translate="home" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a class="nav-link submenuContainer" data-translate="services" id="servicesItem" href="#">SERVICIOS<i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="submenu" id="submenu">
+                        <li><a href="services.html" data-translate="subTittle1">
+                            Página de Servicios
+                        </a></li>
+                        <li><a href="services.html#hardWareImple" data-translate="subTittle2">
+                            Desarrollo de Software
+                        </a></li>
+                        <li><a href="services.html#softwareDevelopment" data-translate="subTittle3">
+                            Estrategias de Marketing
+                        </a></li>
+                        <li><a href="services.html#marketingStrateg" data-translate="subTittle4">
+                            Diseño y Marca
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a class="nav-link submenuContainer active" data-translate="services" id="servicesItem" href="#">RECURSOS<i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="submenu submenu2" id="submenu">
+                        <li><a href="services.html" data-translate="subTittle1">
+                            Paquetes
+                        </a></li>
+                        <li><a href="memberships.html" data-translate="subTittle2">
+                            Membresías
+                        </a></li>
+                        <li><a href="soon.html" data-translate="subTittle3">
+                            Productos
+                        </a></li>
+                        <li><a href="soon.html" data-translate="subTittle4">
+                            Blog
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-translate="contact" href="contact.html">CONTACTO</a>
+                </li>        
+            </ul>
+        </div>
+            
+        <div class="logo-container">
+            <figure>
+                <a class="logo" href="index.html">
+                    <img src="multimedia/img/logo.png" 
+                        alt="GetIt Logo" class="logo">
+                </a>
+            </figure>
+        </div>
+
+        <div class="language-selector">
+            <a id="en" href="#" class="language-link en" data-lang="en">
+                <span class="language-text">EN</span>
+            </a>
+            <span class="separator">|</span>
+            <a id="es" href="#" class="language-link es active" data-lang="es">
+                <span class="language-text">ES</span>
+            </a>
+        </div>
+
+        <div class="nav-icons">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <!-- Membership Marketing — Hero -->
+    <section class="membershipWelcome marketing">
+        <div class="mw-content">
+            <h1 class="mw-title">Membresías de <span>Marketing</span> Estratégico</h1>
+
+            <p class="mw-lead">
+                Accede a herramientas exclusivas y asesoría experta para escalar tu marca
+                con estrategias medibles, creatividad y optimización continua.
+            </p>
+
+            <div class="mw-cards">
+                <div class="mw-card">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h3>Campañas Efectivas</h3>
+                    <p>Publicidad orientada a resultados.</p>
+                </div>
+                <div class="mw-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Analítica Avanzada</h3>
+                    <p>Optimiza cada decisión.</p>
+                </div>
+                <div class="mw-card">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <h3>Audiencias</h3>
+                    <p>Segmentación precisa y retención.</p>
+                </div>
+                <div class="mw-card">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h3>Creatividad</h3>
+                    <p>Diferénciate con propósito.</p>
+                </div>
+            </div>
+
+            <a href="contact.html" class="btn-cta">Solicitar membresía</a>
+        </div>
+
+        <div class="mw-media">
+            <figure class="mw-portrait">
+                <img src="multimedia/img/vision-frontal-mujer-posando-con-traje-verde.jpg" alt="Membresía de Marketing" />
+            </figure>
+        </div>
+    </section>
+    <!-- Sección de membresías -->
+    <section class="membershipsDetails">
+        <div class="MemContainer">
+            <!-- Intro -->
+            <div class="intro">
+                <h2>Membresía de Marketing</h2>
+                <p>
+                    Elige el plan de marketing que impulse tu marca en redes sociales. 
+                    Todos los planes cuentan con contrato mínimo de 3 meses.
+                </p>
+            </div>
+
+            <!-- Grid de planes -->
+            <div class="plans">
+                <!-- Plan Básico -->
+                <div class="plan">
+                    <h3>Básico</h3>
+                    <p class="price">$300 <span>/mes</span></p>
+                    <p class="desc">Ideal para dar los primeros pasos en redes sociales.</p>
+                    <ul class="MemFeatures">
+                        <li class="included">✔ Gestión de 2 redes sociales</li>
+                        <li class="included">✔ 8 publicaciones mensuales</li>
+                        <li class="included">✔ Reportes básicos</li>
+                        <li class="excluded">✘ Google Analytics</li>
+                        <li class="excluded">✘ Estrategias avanzadas</li>
+                    </ul>
+                    <a href="#" class="MemBtn">Elegir plan</a>
+                </div>
+                <!-- Plan Estándar (Destacado) -->
+                <div class="plan highlight">
+                    <div class="badge">Más popular</div>
+                    <h3>Estándar</h3>
+                    <p class="price">$400 <span>/mes</span></p>
+                    <p class="desc">La opción perfecta para negocios en crecimiento digital.</p>
+                    <ul class="MemFeatures">
+                        <li class="included">✔ Gestión de 3 redes sociales</li>
+                        <li class="included">✔ 12 publicaciones mensuales</li>
+                        <li class="included">✔ Reportes avanzados</li>
+                        <li class="included">✔ Google Analytics</li>
+                        <li class="excluded">✘ Estrategia de pauta incluida</li>
+                    </ul>
+                    <a href="#" class="MemBtn">Elegir plan</a>
+                </div>
+                <!-- Plan Premium -->
+                <div class="plan">
+                    <h3>Premium</h3>
+                    <p class="price">$500 <span>/mes</span></p>
+                    <p class="desc">Todo lo que tu marca necesita para un crecimiento sin límites.</p>
+                    <ul class="MemFeatures">
+                        <li class="included">✔ Gestión integral hasta 5 redes sociales</li>
+                        <li class="included">✔ 20 publicaciones mensuales</li>
+                        <li class="included">✔ Estrategia de pauta incluida</li>
+                        <li class="included">✔ Google Analytics</li>
+                        <li class="included">✔ Reportes premium</li>
+                    </ul>
+                    <a href="#" class="MemBtn">Elegir plan</a>
+                </div>
+            </div>
+            <!-- Bloque FAQ / Nota aclaratoria -->
+            <div class="memberships-faq">
+                <p>Todos los planes requieren un contrato mínimo de 3 meses.</p>
+                <p>Puedes actualizar tu plan en cualquier momento.</p>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo-container">
+                <img src="multimedia/img/footerLogo.png" alt="NextAI Logo">
+                <div class="socialIcon">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-links footer-container">
+                <h3 class="footer-tittles">Enlaces</h3>
+                <menu>
+                    <li><a href="index.html" data-translate="frHome">Inicio</a></li>
+                    <li><a href="services.html" data-translate="frServices">Servicios</a></li>
+                    <li><a href="gallery.html" data-translate="frPortfolio">Contacto</a></li>
+                </menu>
+            </div>
+            <div class="footer-services footer-container">
+                <h3 class="footer-tittles" data-translate="frServices">Servicios</h3>
+                <menu>
+                    <li><a href="services.html#softwareDevelopment" data-translate="serviceTittle2">Desarrollo de Software</a></li>
+                    <li><a href="services.html#marketingStrateg" data-translate="serviceTittle3">Estrategias de Marketing</a></li>
+                    <li><a href="services.html#designBrand" data-translate="serviceTittle4">Diseño y Marca</a></li>
+                </menu>
+            </div>
+            <div class="footer-company footer-container">
+                <h3 class="footer-tittles">Compañia</h3>
+                <menu>    
+                    <li><a href="about.html" data-translate="frAbout">Acerca</a></li>
+                    <li><a href="#">Afiliados</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Membresías</a></li>
+                </menu>
+            </div>
+            <div class="footer-socials footer-container">
+                <h3 class="footer-tittles" data-translate="contactUs">Contáctanos</h3>
+                <menu>
+                    <li><a href="contact.html" data-translate="frSupport">Soporte</a></li>
+                    <li><a href="#" data-translate="frSocial">Redes Sociales</a></li>
+                    <li><a href="#" data-translate="frPricing">Presupuestos</a></li>
+                </menu>
+            </div>
+        </div>
+            
+        <hr class="footer-divider">
+        <div class="copy">
+            <p>&copy; 2025 GetIt. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

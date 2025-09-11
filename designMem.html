@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <link rel="shortcut icon" href="multimedia/img/favIcon.png" type="image/x-icon">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!--Controllers-->
+    <script src="js/navMenu.js"></script>
+
+    <title>GetIt - Design Membership</title>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <ul class="navlist">
+                <li class="nav-item">
+                    <a class="nav-link" data-translate="home" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a class="nav-link submenuContainer" data-translate="services" id="servicesItem" href="#">SERVICIOS<i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="submenu" id="submenu">
+                        <li><a href="services.html" data-translate="subTittle1">
+                            Página de Servicios
+                        </a></li>
+                        <li><a href="services.html#hardWareImple" data-translate="subTittle2">
+                            Desarrollo de Software
+                        </a></li>
+                        <li><a href="services.html#softwareDevelopment" data-translate="subTittle3">
+                            Estrategias de Marketing
+                        </a></li>
+                        <li><a href="services.html#marketingStrateg" data-translate="subTittle4">
+                            Diseño y Marca
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a class="nav-link submenuContainer active" data-translate="services" id="servicesItem" href="#">RECURSOS<i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="submenu submenu2" id="submenu">
+                        <li><a href="services.html" data-translate="subTittle1">
+                            Paquetes
+                        </a></li>
+                        <li><a href="memberships.html" data-translate="subTittle2">
+                            Membresías
+                        </a></li>
+                        <li><a href="soon.html" data-translate="subTittle3">
+                            Productos
+                        </a></li>
+                        <li><a href="soon.html" data-translate="subTittle4">
+                            Blog
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-translate="contact" href="contact.html">CONTACTO</a>
+                </li>        
+            </ul>
+        </div>
+            
+        <div class="logo-container">
+            <figure>
+                <a class="logo" href="index.html">
+                    <img src="multimedia/img/logo.png" 
+                        alt="GetIt Logo" class="logo">
+                </a>
+            </figure>
+        </div>
+
+        <div class="language-selector">
+            <a id="en" href="#" class="language-link en" data-lang="en">
+                <span class="language-text">EN</span>
+            </a>
+            <span class="separator">|</span>
+            <a id="es" href="#" class="language-link es active" data-lang="es">
+                <span class="language-text">ES</span>
+            </a>
+        </div>
+
+        <div class="nav-icons">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <!-- Membership Design — Hero -->
+    <section class="membershipWelcome design">
+        <div class="design-media">
+            <figure class="design-illustration">
+            <img src="multimedia/img/colegas-sonrientes-de-tiro-medio-que-trabajan-en-la-oficina.jpg" alt="Membresía de Diseño" />
+            </figure>
+        </div>
+
+        <div class="design-content">
+            <h1 class="design-title">
+            Membresías de <span>Diseño</span> Creativo
+            </h1>
+            <p class="design-lead">
+            Dale vida a tu marca con identidad visual sólida, piezas gráficas personalizadas
+            y soporte creativo continuo que refleja el verdadero potencial de tu negocio.
+            </p>
+
+            <div class="design-services">
+            <div class="design-service">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Identidad Visual</h3>
+                <p>Logotipos, manuales de marca y lineamientos claros.</p>
+            </div>
+            <div class="design-service">
+                <i class="fa-solid fa-brush"></i>
+                <h3>Diseño Gráfico</h3>
+                <p>Creatividad aplicada en flyers, banners y anuncios.</p>
+            </div>
+            <div class="design-service">
+                <i class="fa-solid fa-image"></i>
+                <h3>Contenido Digital</h3>
+                <p>Post para redes sociales que conectan con tu audiencia.</p>
+            </div>
+            <div class="design-service">
+                <i class="fa-solid fa-video"></i>
+                <h3>Soporte Multimedia</h3>
+                <p>Edición básica de video y materiales audiovisuales.</p>
+            </div>
+            </div>
+
+            <a href="contact.html" class="btn-cta">Solicitar membresía</a>
+        </div>
+    </section>
+    <!-- Sección de membresías -->
+    <section class="membershipsDetails">
+        <div class="MemContainer">
+        
+            <div class="intro">
+                <h2>Membresía de Diseño</h2>
+                <p>
+                    Elige el plan que mejor se adapte a tu negocio. Todos los planes 
+                    cuentan con contrato mínimo de 3 meses.
+                </p>
+            </div>
+ 
+            <div class="plans">  
+                <div class="plan">
+                    <h3>Básico</h3>
+                    <p class="price">$200 <span>/mes</span></p>
+                    <p class="desc">Perfecto para comenzar a crear presencia visual con lo esencial.</p>
+                    <ul class="MemFeatures">
+                        <li class="included">✔ 6 piezas gráficas al mes</li>
+                        <li class="included">✔ 1 revisión por pieza</li>
+                        <li class="excluded">✘ Material adaptable a redes sociales</li>
+                        <li class="excluded">✘ Animaciones simples (GIFs, reels)</li>
+                        <li class="excluded">✘ Revisiones ilimitadas</li>
+                    </ul>
+                    <a href="#" class="MemBtn">Elegir plan</a>
+                </div>
+            
+                <div class="plan highlight">
+                    <div class="badge">Más popular</div>
+                    <h3>Estándar</h3>
+                    <p class="price">$300 <span>/mes</span></p>
+                    <p class="desc">Ideal para negocios que buscan calidad, consistencia y material adaptable para redes.</p>
+                    <ul class="MemFeatures">
+                        <li class="included">✔ 10 piezas gráficas al mes</li>
+                        <li class="included">✔ 2 revisiones por pieza</li>
+                        <li class="included">✔ Material adaptable a diferentes redes</li>
+                        <li class="excluded">✘ Animaciones simples (GIFs, reels)</li>
+                        <li class="excluded">✘ Revisiones ilimitadas</li>
+                    </ul>
+                    <a href="#" class="MemBtn">Elegir plan</a>
+                </div>
+
+                <div class="plan">
+                    <h3>Premium</h3>
+                    <p class="price">$400 <span>/mes</span></p>
+                    <p class="desc">Para quienes necesitan un flujo completo de contenido con animaciones y revisiones ilimitadas.</p>
+                    <ul class="MemFeatures">
+                        <li class="included">✔ 15–18 piezas gráficas al mes</li>
+                        <li class="included">✔ Revisiones ilimitadas</li>
+                        <li class="included">✔ Animaciones simples (GIFs, reels)</li>
+                        <li class="included">✔ Material adaptable a diferentes redes</li>
+                        <li class="included">✔ Diseño optimizado para campañas</li>
+                    </ul>
+                    <a href="#" class="MemBtn">Elegir plan</a>
+                </div>
+            </div>
+        
+            <div class="memberships-faq">
+                <p>Todos los planes requieren un contrato mínimo de 3 meses.</p>
+                <p>Puedes actualizar tu plan en cualquier momento.</p>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo-container">
+                <img src="multimedia/img/footerLogo.png" alt="NextAI Logo">
+                <div class="socialIcon">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-links footer-container">
+                <h3 class="footer-tittles">Enlaces</h3>
+                <menu>
+                    <li><a href="index.html" data-translate="frHome">Inicio</a></li>
+                    <li><a href="services.html" data-translate="frServices">Servicios</a></li>
+                    <li><a href="gallery.html" data-translate="frPortfolio">Contacto</a></li>
+                </menu>
+            </div>
+            <div class="footer-services footer-container">
+                <h3 class="footer-tittles" data-translate="frServices">Servicios</h3>
+                <menu>
+                    <li><a href="services.html#softwareDevelopment" data-translate="serviceTittle2">Desarrollo de Software</a></li>
+                    <li><a href="services.html#marketingStrateg" data-translate="serviceTittle3">Estrategias de Marketing</a></li>
+                    <li><a href="services.html#designBrand" data-translate="serviceTittle4">Diseño y Marca</a></li>
+                </menu>
+            </div>
+            <div class="footer-company footer-container">
+                <h3 class="footer-tittles">Compañia</h3>
+                <menu>    
+                    <li><a href="about.html" data-translate="frAbout">Acerca</a></li>
+                    <li><a href="#">Afiliados</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Membresías</a></li>
+                </menu>
+            </div>
+            <div class="footer-socials footer-container">
+                <h3 class="footer-tittles" data-translate="contactUs">Contáctanos</h3>
+                <menu>
+                    <li><a href="contact.html" data-translate="frSupport">Soporte</a></li>
+                    <li><a href="#" data-translate="frSocial">Redes Sociales</a></li>
+                    <li><a href="#" data-translate="frPricing">Presupuestos</a></li>
+                </menu>
+            </div>
+        </div>
+            
+        <hr class="footer-divider">
+        <div class="copy">
+            <p>&copy; 2025 GetIt. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
