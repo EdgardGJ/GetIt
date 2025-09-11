@@ -28,7 +28,6 @@ Nuestro enfoque está basado en tres pilares:
 ---
 
 ## 🛠️ Tecnologías Utilizadas
-*(Aquí puedes listar las tecnologías que realmente usaste, por ejemplo:)*  
 - **Frontend**: HTML5, CSS3, JavaScript    
 - **Control de versiones**: Git + GitHub  
 
