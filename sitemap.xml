@@ -19,6 +19,24 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Membresías -->
+  <url>
+    <loc>https://getitofficial.netlify.app/softwareMem.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Membresía Marketing -->
+  <url>
+    <loc>https://getitofficial.netlify.app/marketingMem.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Membresía Diseño -->
+  <url>
+    <loc>https://getitofficial.netlify.app/designMem.html</loc>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Paquetes -->
   <url>
     <loc>https://getitofficial.netlify.app/servicespacks.html</loc>

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GetIt ofrece soluciones digitales en software, marketing y diseño para impulsar el crecimiento de tu negocio.">
+    <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="styles.css" type="text/css"/>
     <link rel="shortcut icon" href="multimedia/img/favIcon.png" type="image/x-icon">
 
@@ -93,92 +95,92 @@
         </div>
     </header>
     <!-- HERO -->
-<section class="packages-hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <h1>Elige el paquete que mejor se adapta a tu negocio</h1>
-    <p>Desde identidad visual hasta estrategias digitales completas, tenemos un plan diseñado para impulsar tu marca.</p>
-    <a href="#paquetes" class="btn-cta">Ver paquetes</a>
-  </div>
-</section>
+    <section class="packages-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Elige el paquete que mejor se adapta a tu negocio</h1>
+            <p>Desde identidad visual hasta estrategias digitales completas, tenemos un plan diseñado para impulsar tu marca.</p>
+            <a href="#paquetes" class="btn-cta">Ver paquetes</a>
+        </div>
+    </section>
 
-<!-- Sección Objetivos -->
-<section class="objetivos">
-  <div class="contenedor">
-    <h2>Nuestro Objetivo</h2>
-    <p>
-      En GetIt buscamos que tu negocio crezca con soluciones digitales que combinan 
-      <span>tecnología</span>, <span>diseño</span> y <span>estrategia</span>.  
-      Con nuestros paquetes, simplificamos el proceso para que enfoques tu energía en lo importante: tu empresa.
-    </p>
-    <div class="objetivos-grid">
-      <div class="objetivo-item">
-        <i class="fa-solid fa-laptop"></i>
-        <h3>Tecnología</h3>
-        <p>Sitios web modernos, optimizados y seguros para tu negocio.</p>
-      </div>
-      <div class="objetivo-item">
-        <i class="fa-solid fa-palette"></i>
-        <h3>Diseño</h3>
-        <p>Una identidad visual coherente y profesional que impacta.</p>
-      </div>
-      <div class="objetivo-item">
-        <i class="fa-solid fa-bullhorn"></i>
-        <h3>Estrategia</h3>
-        <p>Marketing enfocado en resultados y crecimiento sostenible.</p>
-      </div>
+    <!-- Sección Objetivos -->
+    <section class="objetivos">
+        <div class="contenedor">
+            <h2>Nuestro Objetivo</h2>
+            <p>
+            En GetIt buscamos que tu negocio crezca con soluciones digitales que combinan 
+            <span>tecnología</span>, <span>diseño</span> y <span>estrategia</span>.  
+            Con nuestros paquetes, simplificamos el proceso para que enfoques tu energía en lo importante: tu empresa.
+            </p>
+            <div class="objetivos-grid">
+                <div class="objetivo-item">
+                    <i class="fa-solid fa-laptop"></i>
+                    <h3>Tecnología</h3>
+                    <p>Sitios web modernos, optimizados y seguros para tu negocio.</p>
+                </div>
+                <div class="objetivo-item">
+                    <i class="fa-solid fa-palette"></i>
+                    <h3>Diseño</h3>
+                    <p>Una identidad visual coherente y profesional que impacta.</p>
+                </div>
+                <div class="objetivo-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h3>Estrategia</h3>
+                    <p>Marketing enfocado en resultados y crecimiento sostenible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Paquetes -->
+    <section class="paquetes">
+        <div class="contenedor">
+            <h2>Nuestros Paquetes</h2>
+            <div class="paquetes-grid">
+                <!-- Paquete Empresarial -->
+                <div class="paquete">
+                    <div class="paquete-header">
+                        <h3>Paquete Empresarial</h3>
+                    </div>
+                    <p>Sitio web corporativo + diseño de marca + estrategia inicial de marketing.</p>
+                    <button onclick="openModal('Empresarial')">Ver detalles</button>
+                </div>
+
+                <!-- Paquete Impulso Web -->
+                <div class="paquete">
+                    <div class="paquete-header">
+                        <h3>Paquete Impulso Web</h3>
+                    </div>
+                    <p>Sitio web moderno + estrategia inicial de marketing.</p>
+                    <button onclick="openModal('Impulso Web')">Ver detalles</button>
+                </div>
+
+                <!-- Paquete Marca Digital -->
+                <div class="paquete">
+                    <div class="paquete-header">
+                        <h3>Paquete Marca Digital</h3>
+                    </div>
+                    <p>Diseño de marca + estrategia en redes sociales.</p>
+                    <button onclick="openModal('Marca Digital')">Ver detalles</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <ul id="modal-list"></ul>
+            <button class="modalCta">Solicitar este paquete</button>
+        </div>
     </div>
-  </div>
-</section>
-
-<!-- Sección Paquetes -->
-<section class="paquetes">
-  <div class="contenedor">
-    <h2>Nuestros Paquetes</h2>
-    <div class="paquetes-grid">
-      <!-- Paquete Empresarial -->
-      <div class="paquete">
-        <div class="paquete-header">
-          <h3>Paquete Empresarial</h3>
-        </div>
-        <p>Sitio web corporativo + diseño de marca + estrategia inicial de marketing.</p>
-        <button onclick="openModal('Empresarial')">Ver detalles</button>
-      </div>
-
-      <!-- Paquete Impulso Web -->
-      <div class="paquete">
-        <div class="paquete-header">
-          <h3>Paquete Impulso Web</h3>
-        </div>
-        <p>Sitio web moderno + estrategia inicial de marketing.</p>
-        <button onclick="openModal('Impulso Web')">Ver detalles</button>
-      </div>
-
-      <!-- Paquete Marca Digital -->
-      <div class="paquete">
-        <div class="paquete-header">
-          <h3>Paquete Marca Digital</h3>
-        </div>
-        <p>Diseño de marca + estrategia en redes sociales.</p>
-        <button onclick="openModal('Marca Digital')">Ver detalles</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Modal -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <h3 id="modal-title"></h3>
-    <p id="modal-description"></p>
-    <ul id="modal-list"></ul>
-    <button class="modalCta">Solicitar este paquete</button>
-  </div>
-</div>
 
 
- <!--Footer-->
+    <!--Footer-->
     <footer>
         <div class="footer-content">
             <div class="footer-logo-container">
