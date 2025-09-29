@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="about, follow">
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <link rel="shortcut icon" href="multimedia/img/favIcon.png" type="image/x-icon">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!--Controllers-->
+    <script src="js/navMenu.js"></script>
+    <title>GetIt - About</title>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <ul class="navlist">
+                <li class="nav-item">
+                    <a class="nav-link" data-translate="home" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" data-translate="services" id="aboutItem" href="about.html">NOSOTROS</a>
+                    
+                </li>
+                <li class="nav-item has-submenu">
+                    <a class="nav-link submenuContainer" data-translate="services" id="servicesItem" href="#">RECURSOS<i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="submenu submenu2" id="submenu">
+                        <li><a href="soon.html" data-translate="subTittle4">
+                            Servicios
+                        </a></li>
+                        <li><a href="servicesPacks.html" data-translate="subTittle1">
+                            Paquetes
+                        </a></li>
+                        <li><a href="memberships.html" data-translate="subTittle2">
+                            Membresías
+                        </a></li>
+                        <li><a href="soon.html" data-translate="subTittle3">
+                            Productos
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-translate="contact" href="contact.html">CONTACTO</a>
+                </li>        
+            </ul>
+        </div>
+            
+        <div class="logo-container">
+            <figure>
+                <a class="logo" href="index.html">
+                    <img src="multimedia/img/logo.png" 
+                        alt="GetIt Logo" class="logo">
+                </a>
+            </figure>
+        </div>
+
+        <div class="language-selector">
+            <a id="en" href="#" class="language-link en" data-lang="en">
+                <span class="language-text">EN</span>
+            </a>
+            <span class="separator">|</span>
+            <a id="es" href="#" class="language-link es active" data-lang="es">
+                <span class="language-text">ES</span>
+            </a>
+        </div>
+
+        <div class="nav-icons">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <section class="about-hero-new" aria-labelledby="about-hero-title">
+        <div class="about-hero-inner">
+            <!-- Columna izquierda -->
+            <div class="about-hero__col about-hero__left">
+                <h2 class="about-hero__kicker">Conoce GetIt</h2>
+                <p class="about-hero__lead">
+                    Transformamos ideas en productos digitales reales
+                </p>
+            </div>
+
+            <!-- Centro: PNG (transparente) -->
+            <div class="about-hero__center" aria-hidden="true">
+                
+                <img src="multimedia/img/hombre-corporativo-feliz-hizo-su-trabajo-como-vision-mision-celebrando-exito-liderazgo-concepto-progreso-profesional-ilustracion-plana.png" alt="Miembro del equipo GetIt" class="about-hero__portrait">
+            </div>
+
+            <!-- Columna derecha -->
+            <div class="about-hero__col about-hero__right">
+                <p class="about-hero__right-text">
+                    Un equipo multidisciplinario que acompaña tu negocio: desde la identidad de marca hasta la
+                    infraestructura tecnológica
+                </p>
+                <a class="about-hero__cta" href="#oportunidades">Explorar oportunidades</a>
+            </div>
+
+        </div>
+
+        <!-- Título grande superpuesto en la parte inferior -->
+        <h1 id="about-hero-title" class="about-hero__big-title">SOBRE NOSOTROS</h1>
+    </section>
+
+
+    
+</body>
+</html>
