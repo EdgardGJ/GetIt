@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GetIt ofrece soluciones digitales en software, marketing y diseño para impulsar el crecimiento de tu negocio.">
-    <meta name="robots" content="Design Membership, follow">
+     <meta name="description" content="GetIt ofrece soluciones digitales en software, marketing y diseño para impulsar el crecimiento de tu negocio.">
+    <meta name="robots" content="contact, follow">
     <link rel="stylesheet" href="styles.css" type="text/css"/>
     <link rel="shortcut icon" href="multimedia/img/favIcon.png" type="image/x-icon">
 
@@ -19,9 +19,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     
     <!--Controllers-->
+    <script src="js/testimonial.js" defer></script>
     <script src="js/navMenu.js"></script>
 
-    <title>GetIt - Design Membership</title>
+    <title>GetIt - Contact</title>
 </head>
 <body>
     <header>
@@ -31,11 +32,11 @@
                     <a class="nav-link" data-translate="home" href="index.html">INICIO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-translate="services" id="aboutItem" href="#">NOSOTROS</a>
+                    <a class="nav-link" data-translate="services" id="aboutItem" href="about.html">NOSOTROS</a>
                     
                 </li>
                 <li class="nav-item has-submenu">
-                    <a class="nav-link submenuContainer active" data-translate="services" id="servicesItem" href="#">RECURSOS<i class="fa-solid fa-angle-down"></i></a>
+                    <a class="nav-link submenuContainer" data-translate="services" id="servicesItem" href="#">RECURSOS<i class="fa-solid fa-angle-down"></i></a>
                     <ul class="submenu submenu2" id="submenu">
                         <li><a href="soon.html" data-translate="subTittle4">
                             Servicios
@@ -52,7 +53,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-translate="contact" href="contact.html">CONTACTO</a>
+                    <a class="nav-link active" data-translate="contact" href="contact.html">CONTACTO</a>
                 </li>        
             </ul>
         </div>
@@ -80,112 +81,77 @@
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
     </header>
-    <!-- Membership Design — Hero -->
-    <section class="membershipWelcome design">
-        <div class="design-media">
-            <figure class="design-illustration">
-            <img src="multimedia/img/colegas-sonrientes-de-tiro-medio-que-trabajan-en-la-oficina.jpg" alt="Membresía de Diseño" />
-            </figure>
-        </div>
 
-        <div class="design-content">
-            <h1 class="design-title">
-            Membresías de <span>Diseño</span> Creativo
-            </h1>
-            <p class="design-lead">
-            Dale vida a tu marca con identidad visual sólida, piezas gráficas personalizadas
-            y soporte creativo continuo que refleja el verdadero potencial de tu negocio.
-            </p>
+    <section class="contact-section">
+        <div class="contact-container">
 
-            <div class="design-services">
-            <div class="design-service">
-                <i class="fa-solid fa-palette"></i>
-                <h3>Identidad Visual</h3>
-                <p>Logotipos, manuales de marca y lineamientos claros.</p>
-            </div>
-            <div class="design-service">
-                <i class="fa-solid fa-brush"></i>
-                <h3>Diseño Gráfico</h3>
-                <p>Creatividad aplicada en flyers, banners y anuncios.</p>
-            </div>
-            <div class="design-service">
-                <i class="fa-solid fa-image"></i>
-                <h3>Contenido Digital</h3>
-                <p>Post para redes sociales que conectan con tu audiencia.</p>
-            </div>
-            <div class="design-service">
-                <i class="fa-solid fa-video"></i>
-                <h3>Soporte Multimedia</h3>
-                <p>Edición básica de video y materiales audiovisuales.</p>
-            </div>
+            <!-- Columna izquierda: Formulario -->
+            <div class="contactForm">
+                <h2 class="contact-title">¿Tienes un proyecto en mente?</h2>
+                <p class="contact-subtitle">Completa el formulario y nuestro equipo se pondrá en contacto contigo.</p>
+
+                <form action="#" method="post" class="contact-form">
+                    <div class="input-wrap">
+                        <input type="text" autocomplete="off" name="First Name" class="contact-input" required>
+                        <label for="First Name" data-translate="frstName">Nombres</label>
+                        <i class="fa-solid fa-address-card"></i>
+                    </div>
+                            
+                    <div class="input-wrap">
+                        <input type="text" autocomplete="off" name="Last Name" class="contact-input" required>
+                        <label for="Last Name" data-translate="lstName">Apellido</label>
+                        <i class="fa-solid fa-address-card"></i>
+                    </div>
+
+                    <div class="input-wrap w-100">
+                        <input type="email" autocomplete="off" name="email" class="contact-input" required>
+                        <label for="email">Correo electrónico</label>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                            
+                    <div class="input-wrap textarea w-100">
+                        <textarea name="Message" autocomplete="off" class="contact-input" required></textarea>
+                        <label for="Message" data-translate="message">Cuéntanos sobre tu proyecto</label>
+                        <i class="fa-solid fa-inbox"></i>
+                    </div>
+
+                    <div class="contact-buttons">
+                        <button class="contactbtn upload">
+                            <span data-translate="addAttach">
+                                <i class="fa-solid fa-paperclip"></i>Add attachment 
+                            </span>
+                            <input type="file" name="attachment">
+                        </button>
+                        <input type="submit" value="Send Message" class="contactbtn" id="contactBtn">
+                    </div>
+                </form>
             </div>
 
-            <a href="contact.html" class="btn-cta">Solicitar membresía</a>
-        </div>
-    </section>
-    <!-- Sección de membresías -->
-    <section class="membershipsDetails">
-        <div class="MemContainer">
-        
-            <div class="intro">
-                <h2>Membresía de Diseño</h2>
-                <p>
-                    Elige el plan que mejor se adapte a tu negocio. Todos los planes 
-                    cuentan con contrato mínimo de 3 meses.
-                </p>
-            </div>
- 
-            <div class="plans">  
-                <div class="plan">
-                    <h3>Básico</h3>
-                    <p class="price">$200 <span>/mes</span></p>
-                    <p class="desc">Perfecto para comenzar a crear presencia visual con lo esencial.</p>
-                    <ul class="MemFeatures">
-                        <li class="included">✔ 6 piezas gráficas al mes</li>
-                        <li class="included">✔ 1 revisión por pieza</li>
-                        <li class="excluded">✘ Material adaptable a redes sociales</li>
-                        <li class="excluded">✘ Animaciones simples (GIFs, reels)</li>
-                        <li class="excluded">✘ Revisiones ilimitadas</li>
-                    </ul>
-                    <a href="#" class="MemBtn">Elegir plan</a>
+            <!-- Columna derecha: Testimonios -->
+            <div class="testimonials-wrapper">
+                <div class="testimonials-gradient"></div>
+                <div class="testimonials-track">
+                    <div class="testimonial">
+                        <p>“El equipo de GetIt superó nuestras expectativas, entregaron un sitio web impecable y muy funcional.”</p>
+                        <span class="author">— Laura G. | Directora de Marketing</span>
+                    </div>
+                    <div class="testimonial">
+                        <p>“Profesionales, creativos y rápidos. Definitivamente volveremos a trabajar con ellos.”</p>
+                        <span class="author">— Carlos M. | CEO de StartHub</span>
+                    </div>
+                    <div class="testimonial">
+                        <p>“Su estrategia digital nos ayudó a aumentar nuestras ventas un 40% en solo 3 meses.”</p>
+                        <span class="author">— Ana R. | Fundadora de Nova</span>
+                    </div>
+                    <div class="testimonial">
+                        <p>“Excelente comunicación y resultados sorprendentes. Altamente recomendados.”</p>
+                        <span class="author">— Diego P. | Emprendedor</span>
+                    </div>
                 </div>
-            
-                <div class="plan highlight">
-                    <div class="badge">Más popular</div>
-                    <h3>Estándar</h3>
-                    <p class="price">$300 <span>/mes</span></p>
-                    <p class="desc">Ideal para negocios que buscan calidad, consistencia y material adaptable para redes.</p>
-                    <ul class="MemFeatures">
-                        <li class="included">✔ 10 piezas gráficas al mes</li>
-                        <li class="included">✔ 2 revisiones por pieza</li>
-                        <li class="included">✔ Material adaptable a diferentes redes</li>
-                        <li class="excluded">✘ Animaciones simples (GIFs, reels)</li>
-                        <li class="excluded">✘ Revisiones ilimitadas</li>
-                    </ul>
-                    <a href="#" class="MemBtn">Elegir plan</a>
-                </div>
-
-                <div class="plan">
-                    <h3>Premium</h3>
-                    <p class="price">$400 <span>/mes</span></p>
-                    <p class="desc">Para quienes necesitan un flujo completo de contenido con animaciones y revisiones ilimitadas.</p>
-                    <ul class="MemFeatures">
-                        <li class="included">✔ 15–18 piezas gráficas al mes</li>
-                        <li class="included">✔ Revisiones ilimitadas</li>
-                        <li class="included">✔ Animaciones simples (GIFs, reels)</li>
-                        <li class="included">✔ Material adaptable a diferentes redes</li>
-                        <li class="included">✔ Diseño optimizado para campañas</li>
-                    </ul>
-                    <a href="#" class="MemBtn">Elegir plan</a>
-                </div>
-            </div>
-        
-            <div class="memberships-faq">
-                <p>Todos los planes requieren un contrato mínimo de 3 meses.</p>
-                <p>Puedes actualizar tu plan en cualquier momento.</p>
             </div>
         </div>
     </section>
+
     <!--Footer-->
     <footer>
         <div class="footer-content">
@@ -237,5 +203,6 @@
             <p>&copy; 2025 GetIt. All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 </html>
